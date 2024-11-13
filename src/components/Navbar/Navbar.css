@@ -1,0 +1,97 @@
+.nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 4px 120px;
+    color: white;
+}
+
+.nav-logo{
+    font-family: Outfit;
+    font-size: 42px;
+    font-weight: 500;
+    cursor: pointer;
+}
+ .nav-menu{
+    display: flex;
+    align-items: center;
+    list-style: none;
+    font-size: 18px;
+    gap: 90px;
+ }
+.nav-menu li{
+    cursor: pointer;
+}
+ .nav-contact{
+    border-radius: 50px;
+    padding: 10px 38px;
+    background: white;
+    color: black;
+ }
+ .nav-link {
+    color: white; 
+    text-decoration: none; 
+    transition: color 0.3s; 
+}
+
+.nav-link:hover {
+    color: lightgray; 
+}
+
+.active-link {
+    font-weight: bold;
+    font-size: larger;
+    background-color: black;
+    color: white;
+    text-decoration: none;
+    border: 2px solid black;
+    border-radius: 10px;
+    padding: 5px;
+}
+.nav-code {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 4px 120px;
+    color: black;
+    border-radius: 20px;
+}
+
+.black-link {
+    color: black;
+}
+
+.code-link{
+    color: white;
+}
+
+.nav-contactnew{
+    color: white;
+    background-color: rgb(54, 53, 53);
+    border-radius: 10px;
+}
+
+@media (max-width: 768px) {
+    .nav {
+        flex-direction: column; /* Stack items vertically */
+        margin: 0; /* Remove margin on smaller screens */
+        padding: 10px; /* Add padding for mobile */
+    }
+
+    .nav-menu {
+        flex-direction: column; /* Stack menu items vertically */
+        gap: 20px; /* Reduce gap between items */
+        width: 100%; /* Make menu full width */
+        align-items: flex-start; /* Align items to the start */
+    }
+
+    .nav-menu li {
+        width: 100%; /* Full width for each menu item */
+        text-align: center; /* Center align text */
+    }
+
+    .nav-contact {
+        width: 100%; /* Full width on mobile */
+        padding: 10px; /* Adjust padding for mobile */
+    }
+}
